@@ -1,0 +1,10 @@
+C:\Users\Пользователь\source\repos\Class-Collection\Class-Collection\bin\Debug\Class-Collection.exe.config
+C:\Users\Пользователь\source\repos\Class-Collection\Class-Collection\bin\Debug\Class-Collection.exe
+C:\Users\Пользователь\source\repos\Class-Collection\Class-Collection\bin\Debug\Class-Collection.pdb
+C:\Users\Пользователь\source\repos\Class-Collection\Class-Collection\bin\Debug\Inputs.dll
+C:\Users\Пользователь\source\repos\Class-Collection\Class-Collection\bin\Debug\Inputs.pdb
+C:\Users\Пользователь\source\repos\Class-Collection\Class-Collection\obj\Debug\Class-Collection.csprojAssemblyReference.cache
+C:\Users\Пользователь\source\repos\Class-Collection\Class-Collection\obj\Debug\Class-Collection.csproj.CoreCompileInputs.cache
+C:\Users\Пользователь\source\repos\Class-Collection\Class-Collection\obj\Debug\Class-Collection.csproj.CopyComplete
+C:\Users\Пользователь\source\repos\Class-Collection\Class-Collection\obj\Debug\Class-Collection.exe
+C:\Users\Пользователь\source\repos\Class-Collection\Class-Collection\obj\Debug\Class-Collection.pdb

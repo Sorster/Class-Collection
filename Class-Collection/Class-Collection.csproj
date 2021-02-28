@@ -43,11 +43,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SuperObjectManager.cs" />
+    <Compile Include="ISuperCollection.cs" />
+    <Compile Include="SuperCollection.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SuperObject.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\Курсы\FamilyTreeManager\Input\Inputs.csproj">
+      <Project>{7f934bc2-a3e9-4056-bd02-3542bd93ab0e}</Project>
+      <Name>Inputs</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
