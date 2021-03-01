@@ -48,39 +48,40 @@ namespace Class_Collection
         public void SortName()
         {
             SuperObject[] array = Collection.GetArray();
+            int arraySize = Collection.Count();
 
-            for (int i = 0; i < Collection.Count(); i++)
+            for (int i = 0; i < arraySize; i++)
             {
-                for (int x = 1; x < Collection.Count(); x++)
+                for (int x = 1; x < arraySize; x++)
                 {
-                    int comparisonValue = array[x].Name.CompareTo(array[x - 1].Name);
-                    if (comparisonValue >= 0)
+                    if (array[x].Name.Length < array[x - 1].Name.Length)
                     {
-                        SwapObjects(array[x], array[x - 1]);
+                        SuperObject temp = array[x];
+                        array[x] = array[x - 1];
+                        array[x - 1] = temp;
                     }
                 }
-            }  
+            }
+
+            Collection.SetArray(array);
         }
         public void SortNumber()
         {
             SuperObject[] array = Collection.GetArray();
-            
-            for (int x = 0; x < Collection.Count(); x++)
+            int arraySize = Collection.Count();
+
+            for (int x = 0; x < arraySize; x++)
             {
-                for (int i = 1; i < Collection.Count(); i++)
+                for (int i = 1; i < arraySize; i++)
                 {
-                    if (array[i].Number > array[i - 1].Number)
+                    if (array[i].Number < array[i - 1].Number)
                     {
-                        SwapObjects(array[i], array[i - 1]);
+                        SuperObject temp = array[i];
+                        array[i] = array[i - 1];
+                        array[i - 1] = temp;
                     }
                 }
             }   
-        }
-        void SwapObjects(SuperObject obj1, SuperObject obj2)
-        {
-            SuperObject temp = obj1;
-            obj1 = obj2;
-            obj2 = temp;
         }
 
         public void RemoveElement()
@@ -90,6 +91,11 @@ namespace Class_Collection
         public void RemoveAll()
         {
             Collection.RemoveAll();
+        }
+
+        public void Search()
+        {
+            Collection.BinarySearch().ShowObject();
         }
 
         public bool IsEmpty()

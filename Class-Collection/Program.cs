@@ -54,6 +54,10 @@ namespace Class_Collection
                         superObjectManager.RemoveAll();
                         break;
 
+                    case Menu.Search:
+                        superObjectManager.Search();
+                        break;
+                        
                     default:
                         Console.WriteLine("Wrong command!");
                         break;
@@ -96,7 +100,8 @@ namespace Class_Collection
             Console.WriteLine("3 - Sort");
             Console.WriteLine("4 - Remove element (by id)");
             Console.WriteLine("5 - Remove all elements");
-            Console.WriteLine("6 - Exit");
+            Console.WriteLine("6 - Search");
+            Console.WriteLine("7 - Exit");
             Console.ForegroundColor = ConsoleColor.Red;
             Console.Write("Command: ");
         }
@@ -115,6 +120,7 @@ namespace Class_Collection
             Sort,
             RemoveElement,
             RemoveAll,
+            Search,
             Exit
         }
     }
