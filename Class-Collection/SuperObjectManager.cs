@@ -62,8 +62,6 @@ namespace Class_Collection
                     }
                 }
             }
-
-            Collection.SetArray(array);
         }
         public void SortNumber()
         {

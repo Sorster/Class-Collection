@@ -121,10 +121,6 @@ namespace Class_Collection
         {
             return ref array;
         }
-        public void SetArray(T[] arr)
-        {
-            array = arr;
-        }
 
         //retun number of elements which are not null
         public int Count()
